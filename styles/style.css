@@ -1,0 +1,345 @@
+:root {
+    --gray: #282929;
+    --black: #1e2020;
+    --gold: #ffcb02;
+    --mont: 'Montserrat';
+    --product: 'Product-Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.header {
+    min-height: 100vh;
+    background: url(../images/header_img_bg.jpg) center/cover no-repeat;
+}
+
+.header__nav {
+    background: var(--black);
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.logo {
+    height: 34px;
+    width: 168px;
+    border: 1px transparent solid;
+    border-image: 1 linear-gradient(133deg, white, var(--gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--product);
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.logo_gold {
+    color: var(--gold);
+}
+
+.logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header__link {
+    font-family: var(--product);
+    color: white;
+    font-size: 20px;
+    margin-left: 70px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.header__title {
+    font-family: var(--product);
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header__text {
+    font-family: var(--product);
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
+
+.history {
+    padding-top: 60px;
+    background: var(--gray);
+}
+
+.section-title {
+    font-family: var(--product);
+    color: var(--gold);
+    font-size: 28px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title::before {
+    content: ' ';
+    background: white;
+    height: 2px;
+    width: 55px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.section-title::after {
+    content: ' ';
+    background: white;
+    height: 2px;
+    width: 55px;
+    margin-top: 10px;
+}
+
+.history__text {
+    font-family: var(--mont);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.carousel__button-prev,
+.carousel__button-next {
+    display: flex;
+    align-items: center;
+    color: var(--gold);
+    font-size: 50px;
+}
+
+.carousel__button-next {
+    justify-content: flex-end;
+}
+
+.carousel__button-prev:hover,
+.carousel__button-next:hover {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.fa-angle-left::after,
+.fa-angle-right::after {
+    color: #a5a6a6;
+}
+
+.history__carousel {
+    background: var(--black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.history__title {
+    font-family: var(--product);
+    color: #fefefe;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.history__title_gold {
+    color: var(--gold);
+}
+
+.history__carousel-text {
+    font-family: var(--mont);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.works {
+    padding-top: 60px;
+    background: var(--gray);
+}
+
+.works__text {
+    font-family: var(--mont);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.works__link {
+    font-family: var(--mont);
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    background: white;
+    border-radius: 19px;
+    transition: 0.2s;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.works__link.active {
+    color: white;
+    background: var(--black);
+}
+
+.works__link:hover {
+    text-decoration: none;
+    color: white;
+    background: var(--gold);
+}
+
+.works__right {
+    padding: 25px;
+    background: var(--black);
+}
+
+.works__right-title {
+    margin-bottom: 15px;
+    color: var(--gold);
+    font-family: var(--product);
+}
+
+.works__right-text {
+    font-family: var(--mont);
+    line-height: 24px;
+    color: white;
+}
+
+.works__right-link {
+    height: 45px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold);
+    border-radius: 22.5px;
+    font-family: var(--product);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.works__right-link:hover {
+    text-decoration: none;
+    color: var(--black);
+    background: white;
+}
+
+.abilities {
+    padding-top: 60px;
+    background: var(--gray);
+    padding-bottom: 30px;
+}
+
+.abilities__link {
+    padding: 0;
+}
+
+.abilities__btn {
+    display: block;
+    text-align: left;
+    padding: 18px 15px;
+    width: 100%;
+    font-family: var(--mont);
+    font-weight: bold;
+    color: var(--black);
+    background: gold;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.abilities__btn:hover {
+    color: var(--black);
+    text-decoration: none;
+}
+.abilities__btn:focus{
+    text-decoration: none;
+}
+
+.abilities__btn.collapsed {
+    color: white;
+    background: var(--black);
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+}
+.card-body{
+    border: 1px var(--gold) solid;
+    background: var(--black);
+    padding: 19px 16px;
+    color: white;
+    font-family: var(--mont);
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.footer{
+    background: var(--black);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer__nav{
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.footer__list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer__link{
+    font-family: var(--product);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.footer__link:hover{
+    color: var(--gold);
+    text-decoration: none;
+}
+.footer__links{
+    text-align: center;
+}
+.footer__contact{
+    font-family: var(--product);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.footer__contact:hover{
+    text-decoration: none;
+    color: white;
+}
